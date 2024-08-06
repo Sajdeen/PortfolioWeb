@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+:root{
+    --color-primary:#130f40;
+    --color-secondary:#F8EFBA;
+    --color-white:white;
+   --color-black:black;
+   --br-sm-2: 14px;
+}
+body{
+    font-family: "EB Garamond", serif;
+  background-color: var(--color-primary);
+  font-size: 1.1rem;
+}
