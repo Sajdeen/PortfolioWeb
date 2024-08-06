@@ -19,4 +19,24 @@ body{
     font-family: "EB Garamond", serif;
   background-color: var(--color-primary);
   font-size: 1.1rem;
+  color: white;
+transition:all .4s ease-in-out;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+header{
+  height: 100vh;
+  color: #F8EFBA;
+  
+}
+section{
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+
 }
