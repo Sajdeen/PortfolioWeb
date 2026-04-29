@@ -1,42 +1,62 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
 <body>
-  <body class="main">
+  <div class="container">
+
     <header>
       <nav>
-       <logo>sajdeenRahmani</logo> 
-       <a href="#"><i class="fa-solid fa-house"></i></a>
-       <i class="fa-solid fa-user"></i>
+        <div class="logo">
+          <img src="images/slogo.jpg" alt="S logo">
+          <span class="logo-text"> AJDEEN RAHMANI </span>
+        </div>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
       </nav>
-        <i class="fa-brands fa-instagram"></i>
     </header>
 
-    <main>
-        <section class="section sec2 about"></section>
-        <section class="section sec3 Portfolio"></section>
-        <section class="section sec4 Skills"></section>
-        <section class="section sec5 Projects"></section>
-
-
-    </main>
-
-    <div class="controls">
-
-      <div class="control control-1 data-id= header">
-        
-      </div>
-      <div class="control control-2 ativebutton"></div>
-      <div class="control control-3 axtivebutton"></div>
-      <div class="control control-4 axtivebutton"></div>
+    <!-- Sections -->
+    <section id="home" class="">
+<div class="card">
+  <div class="card-body">
+    <div class="home-sectionheading">
+      <span class="home-text">Hii!</span> 
+      <h3 class="homeh3">My name is Sajdeen Rahmani</h3>
     </div>
-  </body>  
-</body>
-</html>
+    <div class="home-role">
+      I am a <span class="role"></span>
+    </div>
+    <div class="home-section-desription">
+      <p>I am a Software Developer and here is my portfolio website.
+        Here you'll learn about my journey as a software developer. </p>
+    </div>
 
+    <div class="btn">
+     <button class="btn1">Contact Us</button>
+   <a link href="files/SajdeenResume.pdf" class="Dwnld">Download CV </a>
+    <!-- <a href="files/SajdeenResume.pdf" class="download-button" download="Your_Resume.pdf">
+                            Download Resume <i class="fa fa-download"></i>
+                        </a> -->
+    </div>
+
+  </div>
+</div>
+      
+    </section>
+    <section id="projects" class="section"></section>
+    <section id="skills" class="section"></section>
+    <section id="education" class="section"></section>
+
+  </div>
+</body>
+</head>
+</html>
