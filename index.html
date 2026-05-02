@@ -4,7 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
   <div class="container">
 
@@ -15,7 +16,14 @@
           <span class="logo-text"> AJDEEN RAHMANI </span>
         </div>
 
-        <ul>
+        <div class="menu-toggle" >
+         <span></span>
+         <span></span>
+         <span></span>
+        </div>
+
+
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -35,14 +43,14 @@
     <div class="home-role">
       I am a <span class="role"></span>
     </div>
-    <div class="home-section-desription">
+    <div class="home-section-description">
       <p>I am a Software Developer and here is my portfolio website.
         Here you'll learn about my journey as a software developer. </p>
     </div>
 
     <div class="btn">
      <button class="btn1">Contact Us</button>
-   <a link href="files/SajdeenResume.pdf" class="Dwnld">Download CV </a>
+   <a href="files/SajdeenResume.pdf" class="Dwnld">Download CV <i class="fa fa-download"></i> </a>
     <!-- <a href="files/SajdeenResume.pdf" class="download-button" download="Your_Resume.pdf">
                             Download Resume <i class="fa fa-download"></i>
                         </a> -->
@@ -57,6 +65,7 @@
     <section id="education" class="section"></section>
 
   </div>
+
+  <script src="script.js"></script>
 </body>
-</head>
 </html>
