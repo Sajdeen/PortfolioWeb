@@ -13,7 +13,7 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="images/slogo.jpg" alt="S logo">
+          <img src="images/s.jpg" alt="S logo">
           <span class="logo-text"> AJDEEN RAHMANI </span>
         </div>
 
@@ -28,7 +28,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
+          <li><a href="#education-sec">Education</a></li>
         </ul>
       </nav>
     </header>
@@ -38,34 +38,237 @@
 <div class="card">
   <div class="card-body">
     <div class="home-sectionheading">
-      <span class="home-text">Hii!</span> 
+      <span class="home-text">Hi!</span> 
       <h3 class="homeh3">My name is Sajdeen Rahmani</h3>
     </div>
     <div class="home-role">
       I am a <span class="role"></span>
     </div>
     <div class="home-section-description">
-      <p>I am a Software Developer and here is my portfolio website.
-        Here you'll learn about my journey as a software developer. </p>
+      <p> I am a Frontend Developer, and this is my portfolio website.
+Here, you can explore my projects, skills, and journey as a developer. </p>
     </div>
 
     <div class="btn">
-     <button class="btn1">Contact Us</button>
+     <button class="btn1" id="contactBtn">Contact Us</button>
    <a href="files/SajdeenResume.pdf" class="Dwnld">Download CV <i class="fa fa-download"></i> </a>
-    <!-- <a href="files/SajdeenResume.pdf" class="download-button" download="Your_Resume.pdf">
-                            Download Resume <i class="fa fa-download"></i>
-                        </a> -->
+    
     </div>
 
   </div>
 </div>
-      
-    </section>
-    <section id="projects" class="section"></section>
-    <section id="skills" class="section"></section>
-    <section id="education" class="section"></section>
+   
 
-  </div>
+<div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+               
+                    <div class="contact-icons">
+                        <a href="https://www.linkedin.com/in/sajdeen-rahmani-05a1b0231/" target="_blank" class="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                 
+                  
+                        <a href="mailto:rahmanis0711@gmail.com" class="gmail">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                   
+                   
+                        <a href="https://wa.me/9571584521" target="_blank" class="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                   
+                        <a href="https://www.instagram.com/sajbits" target="_blank" class="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    
+                
+            </div>
+        </div>
+ </section>
+
+    <div id="projects" class="section">
+    <h2 class="pr">
+        <span class="p">P</span>rojects
+    </h2>
+   
+     <button id="prev"> &#10094; </button>
+     <div class="slider">
+     <div id="project-container">
+        <div class="project-card">
+
+    <div class="project-img">
+        <img src="images/tictactoe.png" alt="Tic Tac Toe" class="project-image">
+    </div>
+
+    <h3 class="project-title">Tic Tac Toe</h3>
+
+    <div class="project-description">
+        <p>
+            A simple Tic Tac Toe game built using HTML, CSS, and JavaScript.
+            Players take turns placing their marks, and the game detects the
+            winner or a draw automatically.
+        </p>
+    </div>
+
+    <div class="tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+
+    <div class="project-links">
+        <a href="https://github.com/sajdeen/tic-tac-toe" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <a href="https://sajdeen.github.io/tic-tac-toe/" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+    </div>
+
+</div>
+    
+        <div class="project-card">
+       Calculator
+        </div>
+        <div class="project-card">
+       Quiz Web App
+        </div>
+    </div>
+    </div>
+      <button id="next"> &#10095; </button>
+
+
+</div>
+       
+    <section id="skills" class="">
+              
+            <h3 class="skill-head">
+                <span class="skillS">S</span>kills</h3>
+                
+            
+              <div class="skill-bar">
+                        <div class="skill-details">
+                            <img src="./images/HTML.png" alt="html" class="skill-logo">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-percentage">95%</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-details">
+                            <img src="./images/CSS.png" alt="CSS" class="skill-logo">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-percentage">85%</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="skill-bar">
+                        <div class="skill-details">
+                            <img src="./images/Javascript.svg" alt="JavaScript" class="skill-logo">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-percentage">80%</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="80%"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <div class="skill-details">
+                            <img src="./images/php.png" alt="PHP" class="skill-logo">
+                            <div class="skill-name">PHP</div>
+                            <div class="skill-percentage">80%</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="60%"></div>
+                        </div>
+                    </div>
+
+
+                   
+
+                    <div class="skill-bar">
+                        <div class="skill-details">
+                            <img src="./images/Bootstrap.svg" alt="Bootstrap" class="skill-logo">
+                            <div class="skill-name">Bootstrap</div>
+                            <div class="skill-percentage">80%</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="80%"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <div class="skill-details">
+                            <img src="./images/Tailwind.png" alt="Tailwind" class="skill-logo">
+                            <div class="skill-name">Tailwind</div>
+                            <div class="skill-percentage">80%</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="skill-bar">
+                        <div class="skill-details">
+                            <img src="./images/Github.svg" alt="Github" class="skill-logo">
+                            <div class="skill-name">Github</div>
+                            <div class="skill-percentage">70%</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="80%"></div>
+                        </div>
+                    </div>
+
+                
+    </section>
+
+   
+        <div class="education-section" id="education-sec">
+            <h2 class="section-heading">
+                <Span class="e">E</Span>DUCATION
+            </h2>
+                    <div class="education-card">
+                        <h4 class="degree">Master of Computer Applications (MCA)</h4>
+                        <p class="school">Patna Science College</p>
+                        <p class="year">2022 - 2024</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <h4 class="degree">Bachelor of Computer Applications (BCA)</h4>
+                        <p class="school">MMHAPU</p>
+                        <p class="year">2017 - 2020</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <h4 class="degree">ISC</h4>
+                        <p class="school">RAMBAHADUR INTER COLLEGE</p>
+                        <p class="year">2014 - 2016</p>
+                    </div>
+
+                    <div class="education-card">
+                        <h4 class="degree">MATRICULATION</h4>
+                        <p class="school">LEADS ASIAN SCHOOL</p>
+                        <p class="year">2015</p>
+                    </div>
+                </div>
+        
+</div>
+
+  
 
   <script src="script.js"></script>
 </body>
