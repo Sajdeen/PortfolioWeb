@@ -5,6 +5,10 @@ const modal= document.getElementById("contactModal");
 const closeBtn= document.querySelector("#closeModal")
 const role = document.querySelector(".role")
 const container = document.getElementById("project-container");
+ const modal = document.getElementById("videoModal");
+const video = document.getElementById("projectVideo");
+const source = video.querySelector("source");
+
 
 
   toggle.addEventListener("click", () => {
@@ -116,3 +120,6 @@ window.addEventListener("click", (e) =>{
         modal.style.display = "none";
     }
 });
+
+//project video modal
+

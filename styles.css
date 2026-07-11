@@ -492,6 +492,9 @@ transition:.4s;
     box-shadow:0 0 30px rgba(255,0,60,.6);
 }
 .project-img{
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
     background:linear-gradient(135deg,#2b0000,#7b0000,#ff1e3c);
     padding:15px;
 }
@@ -504,7 +507,7 @@ transition:.4s;
     transition:.4s;
 }
 .project-card:hover .project-image{
-    transform:scale(1.05);
+    transform:scale(1.08);
 }
 .project-card h3{
     color:#fff;

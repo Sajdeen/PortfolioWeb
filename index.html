@@ -100,6 +100,12 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
 
     <div class="project-img">
         <img src="images/tictactoe.png" alt="Tic Tac Toe" class="project-image">
+  
+        <div class="overlay">
+            <button id="openVideo">
+             <i class="fas fa-play"></i> Watch Video
+            </button>
+        </div>
     </div>
 
     <h3 class="project-title">Tic Tac Toe</h3>
@@ -139,10 +145,18 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
     </div>
     </div>
       <button id="next"> &#10095; </button>
-
-
 </div>
-       
+<div class="video-modal" id="videoModal">
+    <div class="video-box">
+    <span id="closeVideo">&times;</span>
+
+    <video controls id="projectVideo">
+        <source src="" type="video/mp4">
+    </video>
+    </div>
+</div>   
+
+
     <section id="skills" class="">
               
             <h3 class="skill-head">
