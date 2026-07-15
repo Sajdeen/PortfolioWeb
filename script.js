@@ -1,11 +1,11 @@
 const toggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector(".nav-links");
 const contactBtn= document.getElementById("contactBtn");
 const modal= document.getElementById("contactModal");
 const closeBtn= document.querySelector("#closeModal")
 const role = document.querySelector(".role")
 const container = document.getElementById("project-container");
- const modal = document.getElementById("videoModal");
+const Videomodal = document.getElementById("videoModal");
 const video = document.getElementById("projectVideo");
 const source = video.querySelector("source");
 
@@ -123,3 +123,24 @@ window.addEventListener("click", (e) =>{
 
 //project video modal
 
+document.querySelectorAll("#watch-btn").forEach(btn => {
+
+btn.addEventListener("click",()=>{
+source.src = btn.dataset.video;
+video.load();
+Videomodal.style.display = "flex";
+video.play();
+});
+
+});
+
+document.getElementById("closeVideo").onclick = () => {
+    Videomodal.style.display = "none";
+    video.pause();
+};
+ window.addEventListener("click", (e) => {
+    if(e.target == Videomodal){
+       Videomodal.style.display = "none";
+        video.pause();
+    }   
+ });

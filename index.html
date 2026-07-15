@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -101,11 +102,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
     <div class="project-img">
         <img src="images/tictactoe.png" alt="Tic Tac Toe" class="project-image">
   
-        <div class="overlay">
-            <button id="openVideo">
-             <i class="fas fa-play"></i> Watch Video
-            </button>
-        </div>
+        
     </div>
 
     <h3 class="project-title">Tic Tac Toe</h3>
@@ -129,9 +126,13 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
             <i class="fab fa-github"></i> GitHub
         </a>
 
-        <a href="https://sajdeen.github.io/tic-tac-toe/" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live Demo
-        </a>
+
+            <button id="watch-btn" data-video="videos/tictactoe.mp4">
+            <i class="fas fa-external-link-alt"></i>
+             Live Demo
+            </button>
+   
+       
     </div>
 
 </div>
@@ -151,7 +152,9 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
     <span id="closeVideo">&times;</span>
 
     <video controls id="projectVideo">
+
         <source src="" type="video/mp4">
+
     </video>
     </div>
 </div>   
