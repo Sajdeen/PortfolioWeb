@@ -555,6 +555,14 @@ transition:.4s;
     background:#fff;
     color:#ff1e3c;
 }
+
+.tech{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:20px;
+    
+}
 .video-modal{
   position: fixed;
   inset: 0;
