@@ -129,6 +129,8 @@ btn.addEventListener("click",()=>{
 source.src = btn.dataset.video;
 video.load();
 Videomodal.style.display = "flex";
+    document.body.style.overflow = "hidden"; // Prevent page scrolling
+
 video.play();
 });
 
@@ -136,6 +138,7 @@ video.play();
 
 document.getElementById("closeVideo").onclick = () => {
     Videomodal.style.display = "none";
+     document.body.style.overflow = "auto";
     video.pause();
 };
  window.addEventListener("click", (e) => {

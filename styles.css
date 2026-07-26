@@ -577,15 +577,18 @@ transition:.4s;
   max-width: 800px; 
   position: relative;
 }
-.video-box .projectVideo{
+.video-box #projectVideo{
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 60, 0.4);
+
 } 
 #closeVideo{
   position: absolute;
   top: -15px;
-  right: -15px;
+  right: -16px;
+  padding: 5px 10px;
   background: #ff4d6d;
   color: #fff;
   border: none;
@@ -636,8 +639,16 @@ box-shadow:0 0 20px rgba(255, 0, 60, 0.2);
 }
 
 /* Skill Card */
+
+.skill p{
+    font-size: 18px;
+    color: #e2ccce;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:cursive;
+}
 .skill-bar{
-    background: #e97c90;
+    background: #b92944;
     padding: 15px 20px;
     border-radius: 12px;
     margin-bottom: 20px;
