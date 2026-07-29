@@ -621,8 +621,12 @@ box-shadow:0 0 20px rgba(255, 0, 60, 0.2);
     background: #100f0f;
     color: white;
 }
-               .skillS{
-                font-size: 5rem;
+
+h3 .h3head{
+  font-size: 6rem;
+}
+   .skillS{
+      font-size: 4rem;
    color:#c38c8c;
    text-shadow:
     0 0 10px rgba(255, 80, 80, 0.6),
@@ -637,9 +641,79 @@ box-shadow:0 0 20px rgba(255, 0, 60, 0.2);
     color: #e2ccce;
 
 }
+.code-icon{
+  justify-items: center;
+  align-items: center;
+  color:red;
+  
+}
+.skill-description{
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(109, 19, 26)
+}
+.hide{
+  display: none;
+}
 
+.skill-category{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.category-card  {
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background:linear-gradient(130deg, #1a1a1a, #3b0a0a);
+  color: white;
+  border-radius: 12px 30px 12px 30px;
+  padding:15px 20px;
+  border: 2px solid red;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+}
+.category-card i{
+  font-size: 30px;
+  color: #ff4d6d;
+  margin-bottom: 10px;
+}
+
+.skill-category-heading{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: #e2ccce;
+  text-align: center;
+}
+.skill-description2{
+  text-align: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(109, 19, 26);
+  gap: 10px;
+}
 /* Skill Card */
+.skills-container{
+    position: relative;
+}
 
+.web-dev-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.tools-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 .skill p{
     font-size: 18px;
     color: #e2ccce;
