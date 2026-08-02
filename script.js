@@ -8,8 +8,10 @@ const container = document.getElementById("project-container");
 const Videomodal = document.getElementById("videoModal");
 const video = document.getElementById("projectVideo");
 const source = video.querySelector("source");
-
-
+const webcard = document.querySelector("#webcard");
+const toolcard = document.querySelector("#toolcard");
+const webskills = document.querySelector(".web-dev-skills");
+const toolskills = document.querySelector(".tools-skills");
 
   toggle.addEventListener("click", () => {
     toggle.classList.toggle("active");
@@ -147,3 +149,19 @@ document.getElementById("closeVideo").onclick = () => {
         video.pause();
     }   
  });
+
+
+ // skills 
+
+ webskills.classList.add("hide");
+ toolskills.classList.add("hide");
+
+ webcard.addEventListener("click", () => {
+    webskills.classList.remove("hide");
+    toolskills.classList.add("hide");
+});
+
+toolcard.addEventListener("click",()=>{
+     toolskills.classList.remove("hide");
+     webskills.classList.add("hide");
+});

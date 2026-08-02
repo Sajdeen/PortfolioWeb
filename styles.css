@@ -651,7 +651,7 @@ h3 .h3head{
   text-align: center;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:rgb(109, 19, 26)
+  color:rgb(109, 19, 26);
 }
 .hide{
   display: none;
@@ -713,6 +713,9 @@ h3 .h3head{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+.hide{
+    display: none;
 }
 .skill p{
     font-size: 18px;
