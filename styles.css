@@ -333,14 +333,20 @@ user-select: none;
    .nav-links {
     display: none;
      position: absolute;
-     top: 60px;
-     left: 0;
-     width: 100%;
-     background: #ac6b6b;
-
+     padding: 30px 18px;
+   top:0%;
+     left: 50%;
+     width: 320px;
+     height: 100vh;
+     background:black;
+     color: #d90303;
+     border-radius: 10px;
      flex-direction: column;
      align-items: center;
+     justify-content: center;
      overflow: hidden;
+backdrop-filter: blur(15px);
+border-left:2px solid rgba(255,0,0,.25);
      transition: 0.4s ease;
    }
 
@@ -348,11 +354,85 @@ user-select: none;
      margin: 15px 0;
    }
 
+   .nav-links li a {
+    display: flex;
+    align-items: center;
+     font-size: 24px;
+     width:100%;
+    padding:15px;
+    border: 2px solid rgba(255,0,60,.4);
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    border-radius:12px;
+    transition:.3s;
+   }
+   .nav-links a:hover{
+    background:linear-gradient(135deg,#2b0000,#7b0000,#5a282e);
+    color:#fff;
+    transform:translateX(8px);
+}
    .nav-links.active {
     display: flex;
    }
  }
 
+ nav ul li a i {
+  margin-right: 8px;
+   font-size: 20px;
+   color: #ff4d6d;
+   transition: 0.3s ease;
+ }
+ .menu-title{
+    color:#ff4d4d;
+    font-size:18px;
+    letter-spacing:2px;
+    text-align:center;
+    margin-bottom:25px;
+}
+.quote-box{
+    margin-top:25px;
+    padding:15px;
+    border:1px solid rgba(255,0,0,.3);
+    border-radius:15px;
+    background:#111;
+    color:#ddd;
+    text-align:center;
+}
+.menu-wrapper{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.menu-line{
+    width:3px;
+    height:240px;
+    background:#ff3030;
+    border-radius:10px;
+    box-shadow:0 0 15px red;
+    position:relative; margin-left:12px;
+    margin-top:10px;
+    left:-8%;
+     transform:translateX(8px);
+
+}
+
+.menu-line .dot{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translateX(-50%);
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 0 15px red;
+}
+
+.menu-items{
+    flex:1;
+}
 .modal{
   display: none;
   position: fixed;
