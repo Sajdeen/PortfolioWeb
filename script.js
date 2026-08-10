@@ -1,5 +1,6 @@
 const toggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const closebtn = document.querySelector("#closetoggle")
 const contactBtn= document.getElementById("contactBtn");
 const modal= document.getElementById("contactModal");
 const closeBtn= document.querySelector("#closeModal")
@@ -13,9 +14,16 @@ const toolcard = document.querySelector("#toolcard");
 const webskills = document.querySelector(".web-dev-skills");
 const toolskills = document.querySelector(".tools-skills");
 
+
+closebtn.addEventListener("click", () => {
+    toggle.classList.remove("active");
+    navLinks.classList.remove("active");
+})
+
   toggle.addEventListener("click", () => {
     toggle.classList.toggle("active");
     navLinks.classList.toggle("active");
+ toggle.classList.remove("hide");
   });
  
 
