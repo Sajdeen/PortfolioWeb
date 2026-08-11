@@ -15,16 +15,62 @@ const webskills = document.querySelector(".web-dev-skills");
 const toolskills = document.querySelector(".tools-skills");
 
 
-closebtn.addEventListener("click", () => {
-    toggle.classList.remove("active");
-    navLinks.classList.remove("active");
-})
+// NAV MENU
 
-  toggle.addEventListener("click", () => {
+const toggleItems = document.querySelectorAll(".nav-links .hide");
+
+toggle.addEventListener("click", () => {
+
     toggle.classList.toggle("active");
     navLinks.classList.toggle("active");
- toggle.classList.remove("hide");
-  });
+
+    toggleItems.forEach(item => {
+        item.classList.remove("hide");
+    });
+
+});
+
+closebtn.addEventListener("click", () => {
+
+    toggle.classList.remove("active");
+    navLinks.classList.remove("active");
+
+    toggleItems.forEach(item => {
+        item.classList.add("hide");
+    });
+
+});
+
+
+// closebtn.addEventListener("click", () => {
+//     toggle.classList.remove("active");
+//     navLinks.classList.remove("active");
+// })
+
+//   toggle.addEventListener("click", () => {
+//     toggle.classList.toggle("active");
+//     navLinks.classList.toggle("active");
+ 
+//   });
+//   const toggleItems = document.querySelectorAll(".nav-links .hide");
+
+// toggle.addEventListener("click", () => {
+//     toggle.classList.toggle("active");
+//     navLinks.classList.toggle("active");
+
+//     toggleItems.forEach(item => {
+//         item.classList.remove("hide");
+//     });
+// });
+
+// closebtn.addEventListener("click", () => {
+//     toggle.classList.remove("active");
+//     navLinks.classList.remove("active");
+
+//     toggleItems.forEach(item => {
+//         item.classList.add("hide");
+//     });
+// });
  
 
   //Project slider
