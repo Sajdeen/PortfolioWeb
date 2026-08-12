@@ -115,7 +115,7 @@ padding-bottom: 0;
   transform:rotate(90deg);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   /* Desktop par menu links show */
   .menu-wrapper.hide {
@@ -155,25 +155,12 @@ padding-bottom: 0;
    align-items: center;
  }
 
- /* .card-body {
-   width: 90%;
-   height: auto;
-   padding: 20px;
-   background: linear-gradient(130deg, #ab0707, #cebcbc);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border-radius: 20px;
- } */
-
  .card-body {
   width: 90%;
   padding: 20px;
 
   position: relative;
   overflow: hidden;
-/* background: linear-gradient(130deg, #7a1c1c, #110606); */
   background: linear-gradient(130deg, #1a1a1a, #3b0a0a); 
 
   border-radius: 20px;
