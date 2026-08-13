@@ -150,7 +150,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
         <span class="p">P</span>rojects
     </h2>
    
-     <button id="prev"> &#10094; </button>
+    
      <div class="slider">
      <div id="project-container">
         <div class="project-card">
@@ -171,7 +171,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
         </p>
     </div>
 
-    <div class="tech">
+    <div class="tech-skills">
      <img src="./images/HTML.png" alt="html" class="skill-logo">
      <img src="./images/CSS.png" alt="CSS" class="skill-logo">
      <img src="./images/Javascript.svg" alt="JavaScript" class="skill-logo">
@@ -185,7 +185,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
          <a href="https://sajdeen.github.io/Tic-Tac-Toe/" target="_blank" id="watch-btn">
         <i class="fas fa-external-link-alt"></i> Live Demo
     </a>
-    <button id="watch-btn" data-video="video/Tic Tac Toe .mp4"> Watchdemo</button>
+    <a id="watch-btn" data-video="video/Tic Tac Toe .mp4"> Watchdemo</a>
     </div>
 
 </div>
@@ -198,7 +198,9 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
         </div>
     </div>
     </div>
-      <button id="next"> &#10095; </button>
+    <div class="slidebtn"><button id="prev"> &#10094; </button>
+      <button id="next"> &#10095; </button></div>
+     
 </div>
 <div class="video-modal" id="videoModal">
     <div class="video-box">
@@ -241,7 +243,14 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
             
             <div class="skill-container">
                 <div class="web-dev-skills hide">
-                   
+                   <div class="skill-start">
+                    <div class="start-circle">
+                      <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <span>START</span>
+                         <span class="road-line"></span>
+
+                   </div>
                 <div class= "skill-circular">
                  <div class="progress-circular" style="--progress:95;">
                     <div class="inner-circle">
@@ -249,7 +258,8 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
                             <div class="skill-name">HTML</div>
                             <div class="skill-percentage">95%</div>
                      </div>
-                 </div>   
+                 </div>                         <span class="road-line"></span>
+   
                  </div>
    
                 <div class="skill-circular">
@@ -291,39 +301,29 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
 
                     <div class="tools-skills hide">
 
-                    <div class="skill-circular">
-                        <div class="progress-circular">
-                            <div class="inner-circle">
+                    <div class="skill-card">
+                         <div class="skill-details">
                             <img src="./images/Bootstrap.svg" alt="Bootstrap" class="skill-logo">
                             <div class="skill-name">Bootstrap</div>
-                            <div class="skill-percentage">80%</div>
-                            <div class="progress" data-progress="80%"></div>
                         </div>
                     </div>
-                </div>
+             
 
                     <div class="skill-card">
                         <div class="skill-details">
                             <img src="./images/Tailwind.png" alt="Tailwind" class="skill-logo">
                             <div class="skill-name">Tailwind</div>
-                            <div class="skill-percentage">80%</div>
                         </div>
-                        <div class="progress-bar">
-                            <div class="progress" data-progress="80%"></div>
-                        </div>
+                    
                     </div>
                     
 
-                    <div class="skill-bar">
+                    <div class="skill-card">
                         <div class="skill-details">
                             <img src="./images/Github.svg" alt="Github" class="skill-logo">
                             <div class="skill-name">Github</div>
-                            <div class="skill-percentage">70%</div>
                         </div>
-                        <div class="progress-bar">
-                            <div class="progress" data-progress="70%"></div>
-                        </div>
-                    </div>
+                  </div>
                    </div>       
             </div>
  </div>
