@@ -670,6 +670,7 @@ transition:.4s;
 }
 .project-links{
     display:flex;
+    flex-wrap: wrap;
     justify-content:center;
     gap:15px;
     margin:20px;
