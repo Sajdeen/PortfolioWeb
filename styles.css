@@ -893,15 +893,26 @@ color: red;
     0 10 15px red;
 }
 .road-line{
-  height: 10rem;
+  height: 110px;
+  width: 16px;
   color:red;
   text-decoration: dashed;
-    position:absolute;
+  display: block;
+    position:relative;
     left:50%;
     transform:rotate x(-10%);
     width:12px;
     box-shadow:0 0 15px red;
 
+}
+.road-line::before{
+  column-gap: "";
+  position: absolute;
+  top: 50%;
+  left:8px;
+  right:8px;
+  border-top:3px dashed #fff;
+ transform: translateY(50%):
 }
 .skill-start span{
   color: red;
