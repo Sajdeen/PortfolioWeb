@@ -897,9 +897,9 @@ color: red;
   color:red;
   text-decoration: dashed;
   display: block;
-    position:relative;
+    position:absolute;
     left:50%;
-    transform:rotate x(-10%);
+    transform:curvedx(10%);
     width:12px;
     box-shadow:0 0 15px red;
 
@@ -1018,17 +1018,10 @@ margin:0 auto 8px;
     font-weight:bold;
 }
 
-/* .progress{
-    height: 100%;
-    width: 0;
-    border-radius: 20px;
-    background: linear-gradient(to right, #410202, #1c0c01);
-    transition: width 1.5s ease;
-} */
+
  .education-section{
   height: 100%;
   width: 100%;
-  /* background:linear-gradient(140deg,  #410202, #322a24 ) ; */
 background-color: #000;
 }
 
