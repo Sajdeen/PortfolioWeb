@@ -7,7 +7,7 @@
   <link rel=icon type="images/png" href="images/srfavicon.png">
   <link rel="apple-touch-icon" href="images/srfavicon.png"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<script src="script.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -198,7 +198,8 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
         </div>
     </div>
     </div>
-    <div class="slidebtn"><button id="prev"> &#10094; </button>
+    <div class="slidebtn">
+        <button id="prev"> &#10094; </button>
       <button id="next"> &#10095; </button></div>
      
 </div>
@@ -215,119 +216,120 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
 </div>   
 
 
-    <div id="skills" class="skill-section">
+    <div id="skill-container" class="skill-section">
               
             <div class="skill-head">
                     <div class="code-icon">
                     <i class="fa-solid fa-code"></i>
                     </div>
-                    <h3 class="h3head">My Tech <span class="skillS">S</span>tack </h3>
-                    <div class="skill-description">I am striving  to never stop learnimg and improving.</div>
-             </div>
+                    <h3 class="h3head">My Journey of Building <span class="skillS"> Modern Websites<span> </h3>
+                    <div class="skill-description">Every skill is a step forward in my journey of turning ideas into modern,interactive and responsive web experiences. </div>
+            </div>
 
-
-                <div class="skill-category">
-                        <div class="category-card" id="webcard">
-                                <i class="fa-solid fa-desktop"></i>
-                                <h2 class= "skill-category-heading">
-                                Web Development</h2>
-                                <p class="skill-description2"> HTML . CSS . JS . REACT   </p>
-                        </div>
-                        <div class="category-card" id="toolcard">
-                            <i class="fa-solid fa-code"></i>
-                            <h2 class="skill-category-heading"> Tools & Others </h2>
-                            <p class="skill-description2">  Git. Github . Bootstrap . VS Code </p>
-                        </div>
-                   
-                </div>
             
-            <div class="skill-container">
-                <div class="web-dev-skills hide">
-                   <div class="skill-start">
-                    <div class="start-circle">
-                      <i class="fa-solid fa-rocket"></i>
-                    </div>
-                    <span>START</span>
-                        
-                   </div>
-                    <div class="skillroad-line">
+            <div class="skill-roadmap-wrapper">
+             <!--svg multilayered red black dotted  road-->
+              <svg class=" road-svg"  viewBox ="0 0 1000 400" perspectiveAspectRatio="none">
+               <path class="road-glow" id="road-path-glow" d="M 40 200 C 70 200, 70 300, 160 300
+                L 220 300 C 280 300, 280 100, 360 100 L 420 100 C 480 100, 480 300, 560 300 L 620 300 C 680 300,
+                 680 100, 760 100 L 820 100 C 880 100, 880 200, 950 200" />    
+                 
+          <path class="road-border" id="road-path-border" d="M 40 200 C 70 200, 70 300,
+           160 300  L 220 300 C 280 300, 280 100, 360 100 L 420 100 C 480 100, 480 300,
+            560 300 L 620 300 C 680 300, 680 100, 760 100 L 820 100 C 880 100, 880 200, 950 200" /> 
+          <path class="road-surface" id="road-path-surface" d="M 40 200 C 70 200, 70 300,
+              160 300 L 220 300 C 280 300, 280 100, 360 100 L 420 100
+              C 480 100, 480 300, 560 300  L 620 300 C 680 300, 680 100,
+               760 100 L 820 100 C 880 100, 880 200, 950 200" />     
+          <path class="road-dotted" id="road-path" d="M 40 200 C 70 200, 70 300,
+           160 300 L 220 300 C 280 300, 280 100, 360 100 L 420 100 C 480 100, 480 300,
+            560 300 L 620 300 C 680 300, 680 100, 760 100 L 820 100 C 880 100, 880 200,
+             950 200" />
+    </svg>
+    <!--start node-->
 
-                <div class= "skill-circular">
-                 <div class="progress-circular" style="--progress:95;">
+              <div class="start-node" id="start-node" >
+
+                 <div class="start-circle">
+                      <i  class="fa-solid fa-play"></i>
+                 </div>
+                     <span class="start-text">Start</span>
+             </div>
+                
+
+<!--moving rocket-->
+                <div class="rocket-node" id="rocket-node">
+                       <i class="fa-solid  fa-rocket" style="color: red;"></i>
+                    </div>   
+
+
+                <div class= "skill-node" data-val="95">
+                 <div class="progress-circular">
                     <div class="inner-circle">
-                        <img src="./images/HTML.png" alt="html" class="skill-logo">
-                            <div class="skill-name">HTML</div>
-                            <div class="skill-percentage">95%</div>
+                    <i class="fa-brands fa-html5" style="color: #e44d26;"></i>
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percentage">0%</span>
                      </div>
                  </div>  
+                </div>
                 
    
-                 </div>
-   
-                <div class="skill-circular">
-                    <div class="progress-circular" style="--progress:85;">
+                <div class="skill-node" data-val="90">
+                    <div class="progress-circular">
                         <div class="inner-circle">
-                            <img src="./images/CSS.png" alt="CSS" class="skill-logo">
-                            <div class="skill-name">CSS</div>
-                            <div class="skill-percentage">85%</div>
+                            <i class="fa-brands fa-css3-alt" style="color:#93a0d6;">  </i>
+                            <!-- <img src="./images/CSS.png" alt="CSS" class="skill-logo"> -->
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percentage">0%</span>
                          </div>
                      </div>
-                     <!-- <span class="road-line"></span> -->
                   </div>
                     
 
-                    <div class="skill-circular">
-                        <div class="progress-circular" style="--progress:80;">
+                    <div class="skill-node"  data-val="85">
+                        <div class="progress-circular">
                          <div class="inner-circle">
-                            <img src="./images/Javascript.svg" alt="JavaScript" class="skill-logo">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-percentage">80%</div>
-                            <!-- <div class="progress" data-progress="80%"></div> -->
+                            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                            <!-- <img src="./images/Javascript.svg" alt="JavaScript" class="skill-logo"> -->
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">0%</span>
                         </div>
                     </div>
                     </div>
                     
 
-                    <div class="skill-circular">
-                    <div class="progress-circular" style="--progress:60;">
+                    <div class="skill-node" data-val="75">
+                    <div class="progress-circular">
                       <div class="inner-circle">
-                            <img src="./images/php.png" alt="PHP" class="skill-logo-php">
-                            <div class="skill-namephp">PHP</div>
-                            <div class="skill-percentage">60%</div>
-                            <!-- <div class="progress" data-progress="80%"></div> -->
+                        <i class="fa-brands fa-php" style="color: blue;"></i>
+                            <!-- <img src="./images/php.png" alt="PHP" class="skill-logo-php"> -->
+                            <span class="skill-namephp">PHP</span>
+                            <span class="skill-percentage">60%</span>
                      </div>
                      </div>
                     </div>
+
+            <!--End Flag-->
+
+            <div class="end-node">
+                <div class="flag-circle">
+                 <i class="fa-solid fa-flag" style="color: red;"></i>
+                </div>
+                <span class="end-text">End</span>
+            </div>
             </div>
              
-</div>
-                    <div class="tools-skills hide">
 
-                    <div class="skill-card">
-                         <div class="skill-details">
-                            <img src="./images/Bootstrap.svg" alt="Bootstrap" class="skill-logo">
-                            <div class="skill-name">Bootstrap</div>
-                        </div>
-                    </div>
-             
 
-                    <div class="skill-card">
-                        <div class="skill-details">
-                            <img src="./images/Tailwind.png" alt="Tailwind" class="skill-logo">
-                            <div class="skill-name">Tailwind</div>
-                        </div>
-                    
-                    </div>
-                    
+                    <div class="toolsection-title">Tools & Techniques</div>
 
-                    <div class="skill-card">
-                        <div class="skill-details">
-                            <img src="./images/Github.svg" alt="Github" class="skill-logo">
-                            <div class="skill-name">Github</div>
-                        </div>
-                  </div>
-                   </div>       
-            </div>
+                 <div class="toolsection-subtitle">
+                    Technologies and tools I used to build, optimize and deploy 
+                    projects.
+                 </div>
+<!--dynamic card render -->
+                    <div class="tools-skills" id="toolsGrid"></div>
+
  </div>
 
    
@@ -335,36 +337,89 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
             <h2 class="section-heading">
                 <Span class="e">E</Span>DUCATION
             </h2>
-            <div class="education-container">
-                    <div class="education-card">
-                        <h4 class="degree">Master of Computer Applications (MCA)</h4>
-                        <p class="school">Patna Science College</p>
-                        <p class="year">2022 - 2024</p>
-                    </div>
-                    
-                    <div class="education-card">
-                        <h4 class="degree">Bachelor of Computer Applications (BCA)</h4>
-                        <p class="school">MMHAPU</p>
-                        <p class="year">2017 - 2020</p>
-                    </div>
-                    
-                    <div class="education-card">
-                        <h4 class="degree">ISC</h4>
-                        <p class="school">RAMBAHADUR INTER COLLEGE</p>
-                        <p class="year">2014 - 2016</p>
-                    </div>
+            <div class="orbit-Wrapper">
+                <div class="orbit-circle orbit-1"></div>
+                <div class="orbit-circle orbit-2"></div>
+                <div class="orbit-circle orbit-3"></div>
+                <div class="center-logo" id="center-logo"></div>
+              </div>
 
-                    <div class="education-card">
-                        <h4 class="degree">MATRICULATION</h4>
-                        <p class="school">LEADS ASIAN SCHOOL</p>
-                        <p class="year">2015</p>
-                    </div>
+              <div class=".planet planet-mca active" data-id="mca">
+                <span class="planet-label">MCA</span>
                 </div>
-        
+                <div class="planet planet-BCA " data-id="bca">
+                    <span class="planet-label">BCA</span>
+                </div>
+
+                <div class="planet planet-12th" data-id="12th">
+                <span class="planet-label">12th</span>
+                </div>
+                <div class="planet planet-10th" data-id="10th">
+                <span class="planet-label">10th</span>
+                </div>
+            </div>
+
+            <div class="education active-pointer" id="pointer-label">
+                Selected:MCA
+            </div>
+<div class="panel-header">
+    <div class="panel-icon" id="panel-icon"></div>
+    <div class="panel-title">
+        <h2 id="panel-title">MCA</h2>
+        <p class="panel-subtitle">Master of Computer Applications</p>
+    </div>
+</div>
+    
+<div class="detail-grid">
+    <div class="detail-item">
+        <div class="detail-item-icon">
+
+        </div>
+        <div class="detail-item-text">
+            <label>College</label>
+           <span id="detail-college">Patna Science College</span>
+        </div>
+     </div>
+
+     <div class="detail-item">
+         <div class="detail-item-icon">
+
+        </div>
+        <div class="detail-item-text">
+            <label>Duration</label>
+           <span id="detail-duration">2022 - 2024</span>
+        </div>
+     </div>
+
+
+      <div class="detail-item">
+         <div class="detail-item-icon">
+
+        </div>
+        <div class="detail-item-text">
+            <label>CGPA</label>
+           <span id="detail-score">8.16/10</span>
+        </div>
+     </div>
+
+  <div class="detail-item">
+         <div class="detail-item-icon">
+
+        </div>
+        <div class="detail-item-text">
+            <label>ACHIEVEMENTS</label>
+           <span id="detail-score">MEDAL FOR DISTINCTION IN GRADUATION</span>
+        </div>
+     </div>
+    </div>
+
+    <div class="quote-box2">
+        <p id="quote-text2">"Education is not the learning of facts,
+             but the training of the mind to think."</p>
 </div>
 
   
 
-  <script src="script.js"></script>
+
 </body>
 </html>
