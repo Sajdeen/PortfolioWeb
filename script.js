@@ -370,7 +370,7 @@ const toolsData=[
 {
   name:"Git & Github",
   desc:"Version control and collaboration using Git & Github.",
-  bgColor:"#0a080d",
+  bgColor:"#4a4450",
   iconText:"github",
   activeDots:5
 },
