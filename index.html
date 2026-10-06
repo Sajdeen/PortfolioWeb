@@ -1,4 +1,5 @@
 <html lang="en">
+    
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -216,7 +217,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
 </div>   
 
 
-    <div id="skill-container" class="skill-section">
+    <div id="skill-container" class="skill-and-tools-wrapper">
               
             <div class="skill-head">
                     <div class="code-icon">
@@ -227,9 +228,9 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
             </div>
 
             
-            <div class="skill-roadmap-wrapper">
+          <div class="skill-roadmap-wrapper">
              <!--svg multilayered red black dotted  road-->
-              <svg class=" road-svg"  viewBox ="0 0 1000 400" perspectiveAspectRatio="none">
+             <svg class=" road-svg"  viewBox ="0 0 1000 400" perspectiveAspectRatio="none">
                <path class="road-glow" id="road-path-glow" d="M 40 200 C 70 200, 70 300, 160 300
                 L 220 300 C 280 300, 280 100, 360 100 L 420 100 C 480 100, 480 300, 560 300 L 620 300 C 680 300,
                  680 100, 760 100 L 820 100 C 880 100, 880 200, 950 200" />    
@@ -248,7 +249,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
     </svg>
     <!--start node-->
 
-              <div class="start-node" id="start-node" >
+               <div class="start-node" id="start-node" >
 
                  <div class="start-circle">
                       <i  class="fa-solid fa-play"></i>
@@ -282,21 +283,21 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
                             <span class="skill-name">CSS</span>
                             <span class="skill-percentage">0%</span>
                          </div>
-                     </div>
+                     </div> 
                   </div>
                     
 
-                    <div class="skill-node"  data-val="85">
+                     <div class="skill-node"  data-val="85">
                         <div class="progress-circular">
                          <div class="inner-circle">
                             <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
                             <!-- <img src="./images/Javascript.svg" alt="JavaScript" class="skill-logo"> -->
-                            <span class="skill-name">JavaScript</span>
+                          <span class="skill-name">JavaScript</span>
                             <span class="skill-percentage">0%</span>
                         </div>
                     </div>
                     </div>
-                    
+                     
 
                     <div class="skill-node" data-val="75">
                     <div class="progress-circular">
@@ -307,7 +308,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
                             <span class="skill-percentage">60%</span>
                      </div>
                      </div>
-                    </div>
+                    </div> 
 
             <!--End Flag-->
 
@@ -318,22 +319,28 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
                 <span class="end-text">End</span>
             </div>
             </div>
-             
 
-
-                    <div class="toolsection-title">Tools & Techniques</div>
+            <!--tools card-->
+<div class="toolcard">         
+    <div class="toolcard-content">
+                   <div class="toolsection-title">Tools & Techniques</div>
 
                  <div class="toolsection-subtitle">
                     Technologies and tools I used to build, optimize and deploy 
                     projects.
                  </div>
+      </div>
 <!--dynamic card render -->
-                    <div class="tools-skills" id="toolsGrid"></div>
+                   <div class="tools-skills" id="toolsGrid"></div>
 
  </div>
+</div>
 
-   
-        <div class="education-section" id="education-sec">
+
+   <!---Education section-->
+   <div class="Education-sec">
+        <div class="staredu-section" id="star-layer">
+            <div class="edu-sec">
             <h2 class="section-heading">
                 <Span class="e">E</Span>DUCATION
             </h2>
@@ -341,10 +348,14 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
                 <div class="orbit-circle orbit-1"></div>
                 <div class="orbit-circle orbit-2"></div>
                 <div class="orbit-circle orbit-3"></div>
-                <div class="center-logo" id="center-logo"></div>
+                <div class="center-logo" id="center-logo">
+                    <i class="fa-solid fa-graduation-cap" style="color: rgb(171, 52, 52);"></i>
+                </div><!--here is center logo-->
               </div>
 
-              <div class=".planet planet-mca active" data-id="mca">
+
+
+              <div class="planet planet-mca    hide " data-id="mca">
                 <span class="planet-label">MCA</span>
                 </div>
                 <div class="planet planet-BCA " data-id="bca">
@@ -359,11 +370,16 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
                 </div>
             </div>
 
+
             <div class="education active-pointer" id="pointer-label">
                 Selected:MCA
             </div>
+
+<div class="detail-panel">
 <div class="panel-header">
-    <div class="panel-icon" id="panel-icon"></div>
+    <div class="panel-icon" id="panel-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+    </div>
     <div class="panel-title">
         <h2 id="panel-title">MCA</h2>
         <p class="panel-subtitle">Master of Computer Applications</p>
@@ -373,7 +389,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
 <div class="detail-grid">
     <div class="detail-item">
         <div class="detail-item-icon">
-
+            <i class="fa-solid fa-university"></i>
         </div>
         <div class="detail-item-text">
             <label>College</label>
@@ -383,7 +399,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
 
      <div class="detail-item">
          <div class="detail-item-icon">
-
+        <i class="fa-solid fa-calendar-days" ></i>
         </div>
         <div class="detail-item-text">
             <label>Duration</label>
@@ -394,7 +410,7 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
 
       <div class="detail-item">
          <div class="detail-item-icon">
-
+            <i class="fa-solid fa-star"></i>
         </div>
         <div class="detail-item-text">
             <label>CGPA</label>
@@ -404,22 +420,49 @@ Here, you can explore my projects, skills, and journey as a developer. </p>
 
   <div class="detail-item">
          <div class="detail-item-icon">
-
+<i class="fa-solid fa-medal" style="color: #c3a708;"></i>
         </div>
         <div class="detail-item-text">
             <label>ACHIEVEMENTS</label>
-           <span id="detail-score">MEDAL FOR DISTINCTION IN GRADUATION</span>
+           <span id="detail-achievement">MEDAL FOR DISTINCTION IN GRADUATION</span>
         </div>
      </div>
     </div>
+
 
     <div class="quote-box2">
         <p id="quote-text2">"Education is not the learning of facts,
              but the training of the mind to think."</p>
 </div>
 
-  
+  </div>
 
+</div>
+</div>
 
+<!---Footer-->
+<div class="footer">
+    <div class="footer-content">
+        <h1 class="footer-title">Let's Build Something Amazing Together.</h1>
+        <p class="footer-subtitle">Currently open for new opportunity and coallaborations.</p>
+
+        
+       
+       <div class="social-sec">
+          <a href="mailto:rahmanis0711@gmail.com" class="gmail">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                   
+                   
+                        <a href="https://wa.me/9571584521" target="_blank" class="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                   
+        <a href="https://www.linkedin.com/in/sajdeen-rahmani-05a1b0231/" class="Linkedin" target="_blank"><i class= "fa-brands fa-linkedin"></i></a>
+         <a href="https://github.com/sajdeen" target="_blank"><i class="fab fa-github" style="color: black;"></i></a>
+   </div>
+    </div>
+</div>
 </body>
 </html>
