@@ -361,10 +361,10 @@ const toolsData=[
   activeDots:3
 },
 {
-  name:"Tailwind CSs",
+  name:"Tailwind CSS",
   desc:"Creating modern, custom designs with utility- first approach.",
   bgColor:"#38bdf8",
-  iconText:"~~",
+  imgSrc:"Tailwind.png",
   activeDots:4
 },
 {
@@ -415,3 +415,131 @@ toolsData.forEach(tool => {
   gridContainer.appendChild(card);
 });
 
+
+
+//edu
+
+const starLayer =document.getElementById('star-layer');
+
+const totalStars = 400;
+
+//dynamic stars with
+
+if (starLayer){
+  for (let i = 0; i<totalStars; i++){
+    const star = document.createElement("div");
+star.classList.add('star');
+
+const topPos = Math.random()*100;
+const leftPos = Math.random()*100;
+const size = Math.random()*2.5 + 1;
+const duration = Math.random() * 4 + 1;
+const delay = Math.random()*3;
+
+star.style.top =`${topPos}%`;
+star.style.left =`${leftPos}%`;
+star.style.width =`${size}px`;
+star.style.height =`${size}px`;
+
+star.style.animationDuration =`${duration}s`;
+star.style.animationDelay= `${delay}s`;
+
+//sta touch clickevent
+const triggerSparkle = (e) =>{
+  const targetStar =e.currentTarget;
+  targetStar.classList.add('sparkle');
+  setTimeout(()=>{
+targetStar.classList.remove('sparkle');
+  },1000);
+};
+star.addEventListener('click', triggerSparkle);
+star.addEventListener('touchstart',triggerSparkle,{passive:true});
+starLayer.appendChild(star);
+  }
+}
+
+
+//Education Data object
+
+const educationData ={
+  "mca":{
+    title:"MCA",
+    subtitle:"Master Of Computer Application",
+    icon:"",
+    college:"Patna Science College",
+    duration:"2022-2024",
+    score:"8.16/10"
+  },
+  "Bca":{
+     title:"BCA",
+    subtitle:"Master Of Computer Application",
+    icon:"",
+    college:"Patna Science College",
+    duration:"2017-2020",
+    score:"7.84/10"
+  },
+  "12th":{
+    title:"ISC",
+    subtitle:"Intermediate",
+    icon:"",
+    college:"RamBahadur Inter College",
+    duration:"2015-2017",
+    score:"7.84/10"
+  },
+  "10th":{
+      title:"10th Grade",
+    subtitle:"Secondary School Certificate",
+    icon:"",
+    college:"Islamia High School",
+    duration:"2015",
+    score:"59.16/10"
+  }
+};
+
+//ui Elements & Planet click handling
+
+const planets = document.querySelectorAll("planet");
+const pointerLabel = document.getElementById("pointer-label");
+const centerLogo = document.getElementById("center-logo");
+
+  function selectPlanet(key){
+    planets.forEach(p => {
+      if(p.dataset.id === key){
+        p.classList.add("active");
+      }
+        else {
+         p.classList.remove("active"); 
+        }
+      }); 
+
+
+//
+
+      const data = educationData[key];
+      if(data){
+        if (centerLogo) centerLogo.innerText = data.icon;
+        
+        if(document.getElementById('panel-icon'))document.getElementById('panel-icon').innerText = data.icon;
+
+        if(document.getElementById('panel-title'))
+          document.getElementById('panel-title').innerText = data.title;
+
+        if(document.getElementById('panel-subtitle'))document.getElementById.innerText = data.subtitle;
+
+         if(document.getElementById('detail-college'))document.getElementById.innerText = data.college;
+
+          if(document.getElementById('detail-duration'))document.getElementById.innerText = data.duration;
+
+        if(document.getElementById('detail-score'))document.getElementById.innerText = data.score;
+
+        if(document.getElementById('detail-achievement'))document.getElementById.innerText = data.achievement;
+
+        if(pointerLabel)pointerLabel.innerText=`Selected: $data.title`;
+
+      }
+    }
+planets.forEach(planet =>{
+  planet.addEventListener('click',()=>{
+    selectPlanet(planet.dataset.id);
+  });
+});
